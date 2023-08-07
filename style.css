@@ -135,3 +135,73 @@ body {
     border-radius: 2rem;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rest of your existing code */
+
+@media (max-width: 768px) {
+
+    :root {
+        --dark-blue: #04021f;
+        --sky-blue: #00abf1;
+        --slider-height: 30rem;
+        /* Adjusted for mobile */
+        --half-slider-height: calc(var(--slider-height) / 2);
+    }
+
+    .circular_slider {
+        top: 30vh;
+        /* Adjusted for mobile */
+        width: 80vw;
+        /* Adjusted for mobile */
+        height: 80vw;
+        /* Adjusted for mobile */
+    }
+
+    .wrapper {
+        border-radius: 50%;
+        transform: rotateZ(-360deg);
+        transition: 1s ease;
+    }
+
+    .character_name {
+        transform: translate(-50%, -400%);
+        /* Adjusted for mobile */
+    }
+
+    .slides {
+        transform: rotateZ(calc(360deg / 5 * var(--img-no))) translateY(var(--half-slider-height));
+        width: 25vw;
+        /* Adjusted for mobile */
+        height: 25vw;
+        /* Adjusted for mobile */
+    }
+
+    .descriptions {
+        bottom: 30%;
+        /* Adjusted for mobile */
+    }
+
+    .descriptions .descriptions_items {
+        width: 90%;
+        /* Adjusted for mobile */
+    }
+    .descriptions_items button {
+        padding: 10px;
+        background-color: var(--sky-blue);
+        color: black;
+        cursor: pointer;
+        border-radius: 1rem;
+    
+    }
+}
